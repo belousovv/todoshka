@@ -13,7 +13,7 @@ const authMiddleware = (req, res, next) => {
   //2. verify jwt_token
 
   try {
-    const decodedToken = jwt.verify(token, "arabarchon");
+    const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decodedToken;
   } catch (e) {
     return res.status(403).json({ message: "authorize error" });
