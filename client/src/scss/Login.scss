@@ -1,0 +1,48 @@
+.login {
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+  }
+
+  &__error {
+    text-align: center;
+    color: #F46666;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    padding: 10px 0;
+    outline: none;
+    border-bottom: 2px solid rgba(#6BB8E3, 0.5);
+    margin-bottom: 20px;
+    font-size: 18px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    width: 52px;
+    height: 52px;
+    background: url("../img/ok_btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 40px;
+    cursor: pointer;
+    padding: 0;
+  }
+}

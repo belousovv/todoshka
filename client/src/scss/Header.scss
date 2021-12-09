@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+
+  &__auth-logout {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.logo {
+  &__link {
+    font-size: 24px;
+    margin-right: 200px;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.nav {
+  width: 100%;
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item + &__item {
+    margin-left: 100px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000;
+  }
+}
